@@ -1,0 +1,90 @@
+/* html {
+    width: 100vw;
+    height: 100vh;
+}
+ */
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: local("Norse-Bold"), url("Norse-Bold.otf") format("opentype");
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0px;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    appearance: none;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-side-container {
+    width: 62.75vw;
+    height: 100vh;
+    border-left: black outset 2.5px;
+    background-color: rgba(230, 230, 230, 0.35);
+}
+
+.form-container {
+    height: fit-content;
+    width: 100%;
+    max-width: 55.8vw;
+    padding: 5.5%;
+    background-color: white;
+    box-shadow: 0px 0px 32px -17px rgba(0,0,0,0.75)
+}
+
+.form-hero-text {
+    width: 80%;
+    padding-top: 19%;
+    padding-bottom: 8%;
+    padding-left: 5%;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-legend-1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-element {
+    padding-top: 2%;
+    font-size: 0.75rem;
+}
+
+.hero-image-container {
+    width: 37.25vw;
+    height: 100vh;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+.hero-title {
+    font-family: Norse-Bold, Arial;
+    position: relative;
+    top: 20%;
+    height: 15%;
+    width: 100%;
+    color: white;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.491);
+}
+
+.logo {
+    width: 4rem;
+    margin: 1%;
+}
