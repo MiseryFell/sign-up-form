@@ -9,12 +9,22 @@
     src: local("Norse-Bold"), url("Norse-Bold.otf") format("opentype");
 }
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
     width: 100%;
     height: 100%;
     display: flex;
     margin: 0px;
+}
+
+a {
+    appearance: none;
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 fieldset {
@@ -26,6 +36,24 @@ fieldset {
     border: none;
     margin: 0px;
     padding: 0px;
+}
+
+input {
+    outline: none;
+    border: solid #E5E7EB 1px;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 230, 0.027);
+}
+
+input:focus {
+    outline: none;
+    border: solid rgb(48, 48, 255) 0.25px;
+    -webkit-box-shadow: 1px 1px 6px 0px #808080; 
+    box-shadow: 1px 1px 6px 0px #808080;
+}
+
+div.form-element>label {
+    color: rgb(1, 31, 66);
 }
 
 .form-side-container {
@@ -44,9 +72,15 @@ fieldset {
     box-shadow: 0px 0px 32px -17px rgba(0,0,0,0.75)
 }
 
+#account-creation-form {
+    max-width: 30rem;
+    min-width: 28rem;
+    width: 60%;
+}
+
 .form-hero-text {
     width: 80%;
-    padding-top: 19%;
+    padding-top: min(19%, 5rem);
     padding-bottom: 8%;
     padding-left: 5%;
     font-size: 1.5vw;
@@ -58,9 +92,33 @@ fieldset {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-element {
+.form-row {
     padding-top: 2%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-element {
     font-size: 0.75rem;
+}
+
+.lower-form-side-container {
+    padding: 5.5%;
+    padding-top: 2.5%;
+}
+
+#create-account-btn {
+    appearance: none;
+    border-radius: 15px;
+    background-color: #596D48;
+    color: white;
+    padding: 15px 45px;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 15px 0px #808080; 
+    box-shadow: 0px 0px 15px 0px #808080;
+    border: none;
 }
 
 .hero-image-container {
@@ -82,6 +140,7 @@ fieldset {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.491);
+    padding: 20px 0px;
 }
 
 .logo {
