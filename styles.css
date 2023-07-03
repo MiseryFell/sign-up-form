@@ -65,7 +65,7 @@ div.form-element>label {
     height: min(25%, fit-content);
     width: 100%;
     max-width: 55.8vw;
-    padding: 1.2em 5.5% 0em 5.5%;
+    padding: 1em 5.5% 0em 5.5%;
     background-color: white;
     box-shadow: 0px 0px 32px -17px rgba(0,0,0,0.75)
 }
@@ -104,8 +104,7 @@ div.form-element>label {
 }
 
 .lower-form-side-container {
-    padding: 5.5%;
-    padding-top: 2.5%;
+    padding: 2.5% 0px 0px 2.5%;
 }
 
 #create-account-btn {
@@ -140,6 +139,15 @@ div.form-element>label {
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.491);
     padding: 20px 0px;
+}
+
+.photo-credit {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: -78%;
+    color: white;
+    font-size: 15px;
 }
 
 #password-match {
