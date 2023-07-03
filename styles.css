@@ -100,7 +100,7 @@ div.form-element>label {
 }
 
 .form-element {
-    font-size: 1vw;
+    font-size: 0.8rem;
 }
 
 .lower-form-side-container {
@@ -147,7 +147,11 @@ div.form-element>label {
     position: relative;
     bottom: -78%;
     color: white;
-    font-size: 15px;
+    font-size: 0.8rem;
+}
+
+.invalid-password {
+    border-color: red !important;
 }
 
 #password-match {
