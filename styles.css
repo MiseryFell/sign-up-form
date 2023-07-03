@@ -1,9 +1,3 @@
-/* html {
-    width: 100vw;
-    height: 100vh;
-}
- */
-
 @font-face {
     font-family: "Norse-Bold";
     src: local("Norse-Bold"), url("Norse-Bold.otf") format("opentype");
@@ -18,6 +12,10 @@ body {
     height: 100%;
     display: flex;
     margin: 0px;
+}
+
+pre {
+    width: 100%;
 }
 
 a {
@@ -64,10 +62,10 @@ div.form-element>label {
 }
 
 .form-container {
-    height: fit-content;
+    height: min(25%, fit-content);
     width: 100%;
     max-width: 55.8vw;
-    padding: 5.5%;
+    padding: 1.2em 5.5% 0em 5.5%;
     background-color: white;
     box-shadow: 0px 0px 32px -17px rgba(0,0,0,0.75)
 }
@@ -90,6 +88,7 @@ div.form-element>label {
 
 .form-legend-1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2vw;
 }
 
 .form-row {
@@ -101,7 +100,7 @@ div.form-element>label {
 }
 
 .form-element {
-    font-size: 0.75rem;
+    font-size: 1vw;
 }
 
 .lower-form-side-container {
@@ -135,7 +134,7 @@ div.form-element>label {
     height: 15%;
     width: 100%;
     color: white;
-    font-size: 5rem;
+    font-size: 6.75vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +142,14 @@ div.form-element>label {
     padding: 20px 0px;
 }
 
+#password-match {
+    width: 100%;
+    color: red;
+    font-size: 1vw;
+    padding: 5px 0px 0px 5px;
+}
+
 .logo {
-    width: 4rem;
+    height: 100%;
     margin: 1%;
 }
